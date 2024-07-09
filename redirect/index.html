@@ -11,6 +11,7 @@
 <script>
   let redirectTo = new URL(document.location.href)
   redirectTo.hostname = 'prod-api.inglesconliza.com'
+  redirectTo.pathname = '/redirect'
   document.getElementById('redirectLink').setAttribute('href', redirectTo.toString())
   document.location = redirectTo.toString()
 </script>
